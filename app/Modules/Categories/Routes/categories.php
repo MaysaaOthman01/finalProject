@@ -4,7 +4,7 @@
 use App\Modules\Categories\Controllers\CategoriesController;
 use Illuminate\Support\Facades\Route;
 
-Route::post('Categories',[CategoriesController::class,'store']);
-Route::put('Categories/{Categories}',[CategoriesController::class,'updata']);
-Route::delete('Categories/{Categories}',[CategoriesController::class,'delete']);
-Route::get('Categories',[CategoriesController::class,'index']);
+Route::post('categories',[CategoriesController::class,'store']);
+Route::put('categories/{categories}',[CategoriesController::class,'update']);
+Route::delete('categories/{categories}',[CategoriesController::class,'delete']);
+Route::get('categories',[CategoriesController::class,'index']);

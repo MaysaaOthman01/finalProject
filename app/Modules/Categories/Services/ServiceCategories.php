@@ -9,7 +9,7 @@ use App\Modules\Categories\Models\Categories;
 class ServiceCategories
 
 {
-    public function store($data)
+    public static function store($data)
     {
         return Categories::query()->create($data);
 

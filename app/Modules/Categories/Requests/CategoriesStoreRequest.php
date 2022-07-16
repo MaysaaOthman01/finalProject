@@ -6,7 +6,7 @@ namespace App\Modules\Categories\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class RequestCategories extends FormRequest
+class CategoriesStoreRequest extends FormRequest
 {
 public function rules(){
     return
