@@ -4,59 +4,13 @@
 namespace App\Modules\Categories\Controllers;
 
 
-class
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-CategoriesController
+class CategoriesController
 {
 
 
+    public function store()
+    {
 
+    }
 
 }
