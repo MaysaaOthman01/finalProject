@@ -13,4 +13,8 @@ class CategoriesController
 
     }
 
+    public function index()
+    {
+        
+    }
 }
