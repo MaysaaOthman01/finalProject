@@ -1,18 +1,19 @@
 <?php
 
 
-namespace App\Modules\Categories\Requests;
+namespace App\Modules\Associations\Requests;
 
 
 use App\Exceptions\CustomException;
 use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Foundation\Http\FormRequest;
 
-class CategoriesStoreRequest extends FormRequest
+class AssociationStoreRequest extends FormRequest
 {
+
     protected function failedValidation(Validator $validator)
     {
-        throw new CustomException($validator->errors()->first(), 422);
+        throw new CustomException($validator->errors()->first(),422);
     }
 
     public function rules()
@@ -20,12 +21,12 @@ class CategoriesStoreRequest extends FormRequest
         return
 
             [
-                'type' => 'required|string',
+
                 'name' => 'required|string',
-                'association_id' => 'required|integer'
+                'place' => 'required|string'
 
             ];
 
-
     }
 }
+

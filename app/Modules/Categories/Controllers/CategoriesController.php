@@ -29,13 +29,16 @@ class CategoriesController
 
     public function update(Categories $categories, CategoriesUpdateRequest $request)
     {
-        $data = ServiceCategories::update($categories, $request);
+        $data = ServiceCategories::update($categories, $request->validated());
         $response = Helpers::createSuccessResponse($data);
         return response()->json($response);
     }
 
     public function delete(Categories $categories)
     {
+      $categories=ServiceCategories::dalete($categories);
+        $response = Helpers::createSuccessResponse($categories);
 
+        return response()->json($response);
     }
 }

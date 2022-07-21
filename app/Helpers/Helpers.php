@@ -12,4 +12,10 @@ class Helpers
          'data' => $data
         ];
     }
+    public static function createErrorResponse($message){
+        return [
+         'isSuccessful' => false,
+         'message' => $message
+        ];
+    }
 }

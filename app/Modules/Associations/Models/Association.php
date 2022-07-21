@@ -9,5 +9,10 @@ use Illuminate\Database\Eloquent\Model;
 class Association extends Model
 
 {
-protected $table ='association';
+    protected $table = 'association';
+
+    protected $fillable = [
+        'name',
+        'place'
+    ];
 }
